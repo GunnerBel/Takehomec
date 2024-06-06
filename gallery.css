@@ -1,0 +1,414 @@
+/* Base styles for desktop */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0c0101;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    width: 87%;
+    border-radius: 40px;
+    background-color: #B22222;
+    height: 840px;
+    padding: 3.5%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.par {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.par p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 80px;
+
+}
+
+@media (max-width: 1300px) {
+    .par p {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .par p {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .par p {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro
+    {
+        height: 500px;
+    }
+    .par p {
+        font-size: 30px;
+    }
+}
+
+
+.gallery {
+    width: 89%;
+    display: flex;
+    position: relative;
+    top: 200px;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin: 20px;
+}
+
+.fox, .whale, .baboo, .deer {
+    width: calc(25% - 2px);
+    height: 588px;
+    overflow: hidden;
+    position: relative;
+}
+
+.fox img, .whale img, .baboo img, .deer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.3s ease;
+
+}
+
+
+@media (min-width: 541px) and (max-width: 1024px) {
+    .intro
+    {
+        height: 700px;
+
+    }
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+        top: 100px;
+    }
+
+    .fox, .whale, .baboo, .deer {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .gall2
+    {
+        width: 110%;
+        display: none;
+
+    }
+    .gall2 img
+    {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+        top: 100px;
+    }
+
+    .fox, .whale, .baboo, .deer {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .gall2
+    {
+        width: 100%;
+        display: none;
+    }
+    .gall2 img
+    {
+        width: 100%;
+    }
+}
+
+.fox:hover img
+{
+    filter: blur(5px) brightness(25%) grayscale(100%);
+
+}
+.whale:hover img
+{
+    filter: blur(5px) brightness(25%) grayscale(100%);
+
+}
+.baboo:hover img
+{
+    filter: blur(5px) brightness(25%) grayscale(100%);
+
+}
+.deer:hover img
+{
+    filter: blur(5px) brightness(25%) grayscale(100%);
+
+}
+.heads{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    transition: transform 0.5s ease-in-out;
+    width: 293px;
+}
+.fox:hover .heads {
+    transform: translate(-50%, calc(-50% - 20px)); /* Move the text up by 20px */
+}
+#fox
+{
+    position: absolute;
+    bottom: 45px;
+    left: 88px;
+}
+#india
+{
+    margin-left: -76px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+.heads2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    transition: transform 0.5s ease-in-out;
+    width: 293px;
+}
+.whale:hover .heads2 {
+    transform: translate(-50%, calc(-50% - 20px)); /* Move the text up by 20px */
+}
+#whale
+{
+    position: absolute;
+    bottom: 45px;
+    left: 62px;
+}
+#south
+{
+    margin-left: -73px;
+
+}
+
+.heads3{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    transition: transform 0.5s ease-in-out;
+    width: 293px;
+}
+.baboo:hover .heads3 {
+    transform: translate(-50%, calc(-50% - 20px)); /* Move the text up by 20px */
+}
+#baboon
+{
+    position: absolute;
+    bottom: 45px;
+    left: 9px;
+}
+#south2
+{
+    margin-left: -178px;
+
+}
+
+.heads4{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    transition: transform 0.5s ease-in-out;
+    width: 293px;
+}
+.deer:hover .heads4 {
+    transform: translate(-50%, calc(-50% - 20px)); /* Move the text up by 20px */
+}
+#deer
+{
+    position: absolute;
+    bottom: 45px;
+    left: 80px;
+}
+#amzon
+{
+    margin-left: -62px;
+
+}
+#zoom, #zoom2, #zoom3, #zoom4
+{
+    transition: transform 0.5s ease;
+
+}
+img
+{
+    transition: transform 0.5s ease;
+}
+.know
+{
+    position: absolute;
+    bottom: -16px;
+    left: 40%;
+    transform: translateX(-50%);
+    color: aqua;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: none;
+    cursor: pointer;
+    width: 200px;
+    transition: transform 0.8s ease;
+
+
+}
+.knows
+{
+    position: absolute;
+    bottom: -16px;
+    left: 49%;
+    transform: translateX(-50%);
+    color: aqua;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: none;
+    cursor: pointer;
+    width: 200px;
+    transition: transform 0.8s ease;
+
+
+}
+.knowss
+{
+    position: absolute;
+    bottom: -16px;
+    left: 22%;
+    transform: translateX(-50%);
+    color: aqua;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: none;
+    cursor: pointer;
+    width: 200px;
+    transition: transform 0.8s ease;
+
+
+}
+.knowsss
+{
+    position: absolute;
+    bottom: -16px;
+    left: 47%;
+    transform: translateX(-50%);
+    color: aqua;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: none;
+    cursor: pointer;
+    width: 200px;
+    transition: transform 0.8s ease;
+
+
+}
+.fox:hover .knows {
+    display: block;
+}
+.whale:hover .know {
+    display: block;
+}
+.baboo:hover .knowss {
+    display: block;
+}
+.deer:hover .knowsss {
+    display: block;
+}
+
+.gall2
+{
+    max-width: 400px;
+    max-height: 600px;
+    margin-top: 20%;
+
+    left: -100px;
+    gap: -355px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2px;
+    background-color: black;
+
+
+
+}
+
+.gall2 img{
+    width: 100%;
+    object-fit: none;
+    object-position: center;
+    transition: transform 0.5s ease-in-out;
+
+
+}
+.gall2 .pic1{
+    transition: transform 0.5s ease-in-out;
+
+}
+.pic2 {
+    position: relative;
+    width: 493px;
+    height: 588px;
+    overflow: hidden;
+}
+
+.pic2 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: filter 0.5s ease;
+}
+.pic2:hover img{
+    filter: blur(5px) brightness(25%) grayscale(100%);
+    transition: 0.3s ease-in-out;
+}
