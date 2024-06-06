@@ -1,4 +1,5 @@
-# Takehomec is a repository created to store a responsive html&css&Javascript file, and a directory for two different challenges:
+# Takehomec is a repository created to store a responsive html&css&Javascript files and a directory for two different challenges:
+For both challenges I had to use multiple functions so that the program can function well
 
 ArrayMap challenge 
 
